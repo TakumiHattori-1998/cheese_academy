@@ -1,0 +1,524 @@
+/* General Styles */
+
+/* bodyは一番したの部分（背景・下地レベル） */
+body {
+    background: white;
+    font-family: Arial, sans-serif;
+    /* font-size: 80%; */
+    color: #191919;
+    text-align: center;
+    overflow-x: hidden;
+
+    /* line-height: 1.6; */
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* containerやmenuはHPで一度しか使わないので、id指定が一般的 */
+#container {
+    width: 80%;
+    min-height: 100%;
+    background: white;
+    margin: 0 auto;
+    position: relative;
+}
+
+#container h1{
+    font-size: 50px;
+}
+
+
+/* ヘッダー部分 */
+header {
+    width: 100%;
+    color: white;
+    text-align: center;
+    /* 小要素が親要素の両端に来るようにする */
+    justify-content: space-between;
+    /* 境界の色 */
+    border: #191919;
+    /* 小要素を横並びにする */
+    display: flex;
+    /* 中央よせ */
+    align-items: center;
+}
+
+header .header-logo{
+    vertical-align: middle;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+nav{
+    display: flex;
+    margin-left: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left: 50px;
+}
+
+nav ul li a{
+    /* padding-top: 50px;
+    padding-bottom: 50px; */
+    font-size: 21px;
+}
+
+/* トップ画像部分 */
+.hero {
+    /* hero要素の背景画像の設定 */
+    background-image: url(../img/mainbg.png);
+    /* 背景画像を要素全体をカバーさせる */
+    background-size: cover;
+    /* 画像を中央に配置 */
+    background-position: center;
+    /* 画像の繰り返しの防止 */
+    background-repeat: no-repeat;
+    /* ビューポートの高さいっぱいに設定 */
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-txt{
+    max-width: 80%;
+    color: white;
+}
+
+.hero-txt h1{
+    margin: 0;
+    padding: 0;
+}
+
+.hero-txt p{
+    margin: 30px 0 0 0;
+    padding: 0;
+    font-size: 40px;
+}
+
+.about {
+    margin: 0;
+    padding: 0;
+}
+
+.about-txt {
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.about-txt h2{
+    font-size: 24px;
+    color: #ffd61a;
+}
+
+.about-txt h3{
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.about-txt-1 {
+    font-size: 16px;
+    margin-top: 60px;
+}
+
+.about-txt-2 {
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.about-txt-3 {
+    font-size: 16px;
+}
+
+.about-txt-4 {
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+.about-txt-5 {
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+.about-txt-6 {
+    font-size: 16px;
+}
+
+.about-images{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0px;
+}
+
+.about-images img{
+    width: calc(25%);
+    height: 200px;
+    object-fit: cover;
+}
+
+.course{
+    margin: 0;
+    padding: 0;
+}
+
+.course-txt{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.course-txt h2{
+    padding-top: 0px;
+    font-size: 24px;
+}
+
+.course-txt p{
+    font-size: 16px;
+    padding-top: 0px;
+}
+
+.course-panel{
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    background-color: #fafafa;
+}
+
+.course-panel-row1{
+    display: flex;
+    width: 100%;
+}
+
+.course-panel-row1 img{
+    width: 50%;
+}
+
+.row1-description{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.row1-txt{
+    padding-left: 50px;
+}
+
+.row1-txt h3{
+    text-align: left;
+}
+
+.row1-txt p{
+    padding-top: 40px;
+    width: 430px;
+    text-align: left;
+}
+
+.course-panel-row2{
+    display: flex;
+}
+
+.course-panel-row2 img{
+    width: 50%;
+}
+
+.row2-description{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.row2-txt{
+    padding-right: 50px;
+}
+
+.row2-txt h3{
+    text-align: left;
+}
+
+.row2-txt p{
+    padding-top: 40px;
+    width: 430px;
+    text-align: left;
+}
+
+.course-panel-row3{
+    display: flex;
+}
+
+.course-panel-row3 img{
+    width: 50%;
+}
+
+.row3-description{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.row3-txt{
+    padding-left: 50px;
+}
+
+.row3-txt h3{
+    text-align: left;
+}
+
+.row3-txt p{
+    padding-top: 40px;
+    width: 430px;
+    text-align: left;
+}
+
+.news{
+    margin-bottom: 60px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-title{
+    margin: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.news-title h2{
+    color: #ffd61a;
+}
+
+.news-title p{
+    margin: 0;
+    padding-top: 30px;
+}
+
+.news-items {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.news-item1{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.news-item1 p{
+    padding-top: 30;
+    text-align: start;
+}
+
+.news-item2{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.news-item2 p{
+    padding-top: 30;
+    text-align: start;
+}
+
+.news-item3{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.news-item3 p{
+    padding-top: 30;
+    text-align: start;
+}
+
+.news a{
+    display: inline-block;
+    margin-top: 60px;
+    width: 300px;
+    height: 60px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 60px;
+    background-color: #ffd61a;
+    color: #fafafa;
+
+}
+
+.news a:hover{
+    background-color: antiquewhite;
+}
+
+.access{
+    margin-top: 60px;
+    padding: 0;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.access-title{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 0;
+}
+
+.access iframe{
+    width: 100%;
+    height: 30vh;
+}
+
+.access dl{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dl-row{
+    height: 50px;
+    width: 800px;
+    display: flex;
+}
+
+.dl-row dt{
+    width: 50%;
+    text-align: left;
+}
+
+.dl-row dd{
+    width: 50%;
+    text-align: left;
+}
+
+.contact {
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 140px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-title{
+    margin-top: 0px;
+    margin-bottom: 70px;
+}
+
+.contact-title p{
+    margin: 20px;
+}
+
+.custom-form{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #191919; /* 上部に細い境界線を追加 */
+    /* border-bottom: 1px solid #191919; */
+}
+
+.form-row{
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    margin-top: 8px;
+    padding-left: 8px;
+    padding-bottom: 8px;
+    /* box-sizing: border-box; */
+}
+
+.form-left{
+    border-right: 1px solid #191919;
+    padding-left: 20px;
+    padding-bottom: 8px;
+    margin-right: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.form-row label{
+    width: 30%;
+    text-align: left;
+    display: block;
+    font-size: 16px;
+}
+
+.form-right{
+    width: 70%;
+    /* border-left: 1px solid #191919; */
+}
+
+.checkboxes{
+    display: flex;
+    flex-direction: column;
+}
+
+.checkboxes label{
+    height: 24px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.form-row textarea{
+    width: 70%;
+
+    /* height: 100px; */
+}
+
+.form-row-details{
+    margin-left: 0; /* 左余白をリセット */
+    padding-left: 0; /* 左パディングをリセット */
+}
+
+form button{
+    display: inline-block;
+    margin-top: 60px;
+    width: 300px;
+    height: 60px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 60px;
+    background-color: #ffd61a;
+    color: #fafafa;
+
+}
+
+form button:hover{
+    background-color: antiquewhite;
+}
+
+.footer-txt{
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #707070;
+    color: #ccc;
+}
